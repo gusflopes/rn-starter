@@ -37,7 +37,7 @@ export default class Main extends Component {
   };
 
   async componentDidMount() {
-    console.tron.log(this.props);
+    // AsyncStorage.clear(); // Used to clear all the AsyncStorage
     const users = await AsyncStorage.getItem('users');
 
     if (users) {
